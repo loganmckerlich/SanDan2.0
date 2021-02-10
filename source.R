@@ -11,6 +11,8 @@ desire<-desire %>%
          "Desire" = desire.1.10.,
          "Activity" = activity)
 
+desire$Activity=str_to_title(desire$Activity)  
+
 plot_desire<-ggplot(data = desire)+
   geom_point(mapping = aes(x=Time,
                            y=Desire,
@@ -30,7 +32,7 @@ want_most<-desire %>%
 
 time_in_sd<-107
 free_time_in_sd<-time_in_sd-tot.time
-free_time_df<- tibble("Time"=free_time_in_sd, "Activity"= "EXTRA TIME")
+free_time_df<- tibble("Time"=free_time_in_sd, "Activity"= "EXTRA TIME, for sleep or whatever")
 
 desire_for_pie<-desire %>% 
   subset(select = c("Time", "Activity")) %>% 
