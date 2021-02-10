@@ -30,7 +30,13 @@ plot_desire
 ```{r table, echo = FALSE}
 table
 ```
-
+### You may think to yourself, you're only in San Diego for 5 hours, do you have time for all this?
+```{r pie, echo=FALSE}
+pie
+```
+![Lets go to the beach for sure](img/IMG_1675.jpeg){width=26%}
+![Maybe we will return to this spot and pay tribute to garry](img/IMG_1737.jpeg){width=26%}
+![We'll definitly get some raw fish](img/IMG_7294.jpeg){width=26%}
 
 
 
