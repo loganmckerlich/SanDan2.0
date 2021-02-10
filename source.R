@@ -20,8 +20,7 @@ plot_desire<-ggplot(data = desire)+
              size = 7)+
   ggtitle("To-Do List")
 
-table<-kable(desire)
-
+table<-kable(desire, caption = "To-Do List")
 total<- nrow(desire)
 
 tot.time<-sum(desire$Time)
@@ -46,5 +45,14 @@ pie<-ggplot(data = desire_for_pie)+
   theme_void()+
   ggtitle("Pie chart of allocation of all 107 hours in San Diego")
 
+
+#try to show data better
+plot_desire_big<-ggplot(data = desire, aes(x=Activity, y=Time, fill = Activity))+
+  geom_bar(stat = "identity")+
+  ylim(0,5) +
+  theme_linedraw() +
+  coord_polar(start = 0)
+  
+  
 
 
