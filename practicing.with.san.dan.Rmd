@@ -1,0 +1,51 @@
+---
+title: "Logans San Dan Desires"
+author: "Logan M"
+date: "2/9/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(dplyr)
+library(ggplot2)
+library(tidyverse)
+library(knitr)
+
+source("source.R")
+```
+
+# Welcome To Logans San Dan Plan
+### Desire represents how badly I want to do each of my `r paste(total)` activities
+### Time represents my estimated time each activity will take in hours
+#### All things told I have `r paste(tot.time)` hours total, better not mess around down there.
+### Activites are listed to the right of the plot and correlate with colored dots on the plot
+
+```{r graph, echo= FALSE}
+plot_desire
+```
+
+### If that graphic doesnt make sense, heres a little table
+```{r table, echo = FALSE}
+table
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
