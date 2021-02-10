@@ -17,9 +17,9 @@ source("source.R")
 # Welcome To Logan and Connors San Dan Plan
 ![What a nice view](img/IMG_1760.jpeg)
 
-### - Desire represents how badly I want to do each of my `r paste(total)` activities
-### - Time represents my estimated time each activity will take in hours
-##### -All things told I have `r paste(tot.time)` hours total, better not mess around down there.
+### - Desire represents how badly we want to do each of the `r paste(total)` activities
+### - Time represents our estimated time each activity will take in hours
+##### -All things told we have `r paste(tot.time)` hours of activities, better not mess around down there.
 ### - Activites are listed to the right of the plot and correlate with colored dots on the plot
 
 ```{r graph, echo= FALSE}
